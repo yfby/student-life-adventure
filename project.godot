@@ -34,6 +34,10 @@ folder_colors={
 "res://script/": "orange"
 }
 
+[gui]
+
+theme/custom_font="uid://cr8y04p8c4arc"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
