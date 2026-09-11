@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://3w7d8nqis2ui"]
+
+[ext_resource type="Script" uid="uid://bv3vash5e1hlo" path="res://scenes/player/player.gd" id="1_8afob"]
+[ext_resource type="Script" uid="uid://d0ub4088ltlqx" path="res://scenes/player/camera_2d.gd" id="2_dovo2"]
+[ext_resource type="Texture2D" uid="uid://dpxm8yw0ghvav" path="res://assets/art/sprites/player.png" id="3_gmlin"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vjpha"]
+size = Vector2(12, 16)
+
+[node name="Player" type="CharacterBody2D" unique_id=389095423]
+script = ExtResource("1_8afob")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1583880687]
+shape = SubResource("RectangleShape2D_vjpha")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=151585069]
+script = ExtResource("2_dovo2")
+
+[node name="DashTimer" type="Timer" parent="." unique_id=1692030540]
+
+[node name="InvinicbiltyTimer" type="Timer" parent="." unique_id=1763970697]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1705377266]
+texture = ExtResource("3_gmlin")
+
+[connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="InvinicbiltyTimer" to="." method="_on_invinicbilty_timer_timeout"]
