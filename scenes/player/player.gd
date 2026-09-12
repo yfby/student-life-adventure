@@ -11,7 +11,6 @@ extends CharacterBody2D
 var move_velocity: Vector2 = Vector2.ZERO
 var external_velocity: Vector2 = Vector2.ZERO
 
-@onready var charge_bar: ProgressBar = %ChargeBar
 @onready var camera: PlayerCamera = $Camera2D
 
 func _ready() -> void:
