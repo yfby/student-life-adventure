@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cog6vwxhg58tk"]
+
+[ext_resource type="Script" uid="uid://kwutq6xpl0b6" path="res://scenes/ui/marker.gd" id="1_q4080"]
+[ext_resource type="Texture2D" uid="uid://do6bemksrm7c4" path="res://assets/art/props/marker.png" id="2_ddxey"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vjpha"]
+radius = 16.0
+
+[node name="Marker" type="Area2D" unique_id=151651441]
+script = ExtResource("1_q4080")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=577880862]
+texture = ExtResource("2_ddxey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1303519973]
+shape = SubResource("CircleShape2D_vjpha")
+
+[node name="Label" type="Label" parent="." unique_id=925093959]
+offset_left = -19.0
+offset_top = -20.0
+offset_right = 21.0
+offset_bottom = -7.0

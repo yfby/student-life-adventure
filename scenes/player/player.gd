@@ -8,6 +8,8 @@ extends CharacterBody2D
 @export var friction: float = 250.0
 @export var external_velocity_decay: float = 4.0
 
+var inventory: Array[String]
+
 var move_velocity: Vector2 = Vector2.ZERO
 var external_velocity: Vector2 = Vector2.ZERO
 

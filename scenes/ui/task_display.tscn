@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cmomulqiu862p"]
+
+[ext_resource type="Script" uid="uid://cctgwq3imgmjx" path="res://scenes/ui/task_display.gd" id="1_fqgkn"]
+
+[node name="TaskDisplay" type="Control" unique_id=1483065812]
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -12.0
+offset_right = 67.0
+offset_bottom = 20.0
+grow_vertical = 2
+script = ExtResource("1_fqgkn")
+
+[node name="Panel" type="Panel" parent="." unique_id=115102396]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel" unique_id=1548202878]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 20.0
+offset_bottom = 10.0
+theme_override_font_sizes/font_size = 12
+text = "Task:"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=1813539382]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/MarginContainer" unique_id=2055231723]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 12
+theme_override_font_sizes/italics_font_size = 12
+theme_override_font_sizes/mono_font_size = 12

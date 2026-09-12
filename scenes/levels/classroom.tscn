@@ -91,11 +91,20 @@ tile_set = SubResource("TileSet_tmhxs")
 tile_map_data = PackedByteArray("AAABAPn/AAACAAAAAAD+//n/AAAAAAAAAAD///n/AAABAAAAAAAAAPn/AAABAAAAAAD+//3/AAADAAAAAAAGAP//AAADAAAAAAD6/wIAAAADAAAAAAD+/wIAAAADAAAAAAAGAAIAAAADAAAAAAD4////AAADAAAAAAAIAP3/AAADAAAAAAD8//3/AAADAAAAAAACAP//AAADAAAAAAA=")
 tile_set = SubResource("TileSet_0x4cu")
 
-[node name="NPC" type="Node2D" parent="." unique_id=1489788907]
+[node name="Objects" type="Node2D" parent="Environment" unique_id=930708855]
+unique_name_in_owner = true
 
-[node name="TeacherPosition" type="Marker2D" parent="NPC" unique_id=200419097]
+[node name="MarkerPositons" type="Node2D" parent="Environment" unique_id=270427877]
+
+[node name="TeacherPosition" type="Marker2D" parent="Environment/MarkerPositons" unique_id=200419097]
 unique_name_in_owner = true
 position = Vector2(-44, -86)
+
+[node name="MarkerPosition" type="Marker2D" parent="Environment/MarkerPositons" unique_id=1487387590]
+unique_name_in_owner = true
+position = Vector2(120, 58)
+
+[node name="NPC" type="Node2D" parent="." unique_id=1489788907]
 
 [node name="Player" parent="." unique_id=389095423 instance=ExtResource("1_w3dg3")]
 unique_name_in_owner = true
