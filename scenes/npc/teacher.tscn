@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cwlsm2d1ls3wp"]
 
+[ext_resource type="Script" uid="uid://dwjpbe34e84up" path="res://scenes/npc/teacher.gd" id="1_1ujio"]
 [ext_resource type="Texture2D" uid="uid://cqttxkk48ee6u" path="res://assets/art/sprites/teacher.png" id="1_7jfdj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vjpha"]
 size = Vector2(12, 16)
 
 [node name="Teacher" type="CharacterBody2D" unique_id=389095423]
+script = ExtResource("1_1ujio")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1583880687]
 shape = SubResource("RectangleShape2D_vjpha")

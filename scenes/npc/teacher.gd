@@ -1,0 +1,3 @@
+class_name NonPlayerCharacter
+
+extends CharacterBody2D
