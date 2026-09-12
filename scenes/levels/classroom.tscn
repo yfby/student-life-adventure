@@ -5,8 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://3w7d8nqis2ui" path="res://scenes/player/player.tscn" id="1_w3dg3"]
 [ext_resource type="Texture2D" uid="uid://b0yq37kjge7gv" path="res://assets/art/props/objects.png" id="2_pfwq2"]
 [ext_resource type="Texture2D" uid="uid://datgra6lc6m81" path="res://assets/art/tilemap/void.png" id="3_mta5c"]
-[ext_resource type="AudioStream" uid="uid://kssoypro3o2t" path="res://assets/audio/earthquake.mp3" id="6_i3tss"]
-[ext_resource type="AudioStream" uid="uid://bkscra0yx742n" path="res://assets/audio/thunder.mp3" id="7_85dde"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qix3v"]
 texture = ExtResource("3_mta5c")
@@ -105,14 +103,3 @@ position = Vector2(-2, -24)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1116631070]
 unique_name_in_owner = true
-
-[node name="SFX" type="Node" parent="." unique_id=1817588689]
-
-[node name="Earthquake" type="AudioStreamPlayer" parent="SFX" unique_id=2051759663]
-unique_name_in_owner = true
-stream = ExtResource("6_i3tss")
-pitch_scale = 3.0
-
-[node name="Thunder" type="AudioStreamPlayer" parent="SFX" unique_id=1703951548]
-unique_name_in_owner = true
-stream = ExtResource("7_85dde")
